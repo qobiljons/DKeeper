@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 0 16px;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 10px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  text-align: start;
+  font-size: 2rem;
+}
+
+header:hover {
+  background-color: #f4a409;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.note {
+  background: linear-gradient(145deg, #fff, #f0f0f0);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 260px;
+  margin: 20px;
+  float: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.note h1 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #555;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  background: transparent;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.note button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form.create-note {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+form.create-note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  border-bottom: 2px solid #f5ba13;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+form.create-note input:focus,
+form.create-note textarea:focus {
+  border-bottom-color: #f4a409;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+form.create-note button:hover {
+  background-color: #f4a409;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Create Area */
+/* Container styling for a Google Keep-like note card appearance */
+.create-area-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(145deg, #fff, #f0f0f0);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(138, 137, 137, 0.3);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.create-area-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(138, 137, 137, 0.4);
+}
+
+/* Input field styling for a clean and minimal look */
+.create-area-input,
+.create-area-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.create-area-input:focus,
+.create-area-textarea:focus {
+  border-bottom: 2px solid #f5ba13;
+  outline: none;
+}
+
+/* Textarea specific styling for consistent appearance */
+.create-area-textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Button styling with a minimal and flat design */
+.create-area-button {
+  padding: 12px 25px;
+  background-color: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.create-area-button:hover {
+  background-color: #f4a409;
+  transform: translateY(-3px);
+}
+
+.create-area-button:active {
+  background-color: #e2990d;
+}
