@@ -1,6 +1,6 @@
-# `dkeeper`
+# `DKeeper`
 
-Welcome to my `dkeeper` project! This project is a decentralized application (DApp) built on the Internet Computer, leveraging the power of Motoko and React for a seamless, secure experience.
+Welcome to my `DKeeper` project! This project is a decentralized application (DApp) built on the Internet Computer, leveraging the power of Motoko and React for a seamless, secure experience.
 
 ## Project Overview
 

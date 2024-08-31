@@ -40,7 +40,7 @@ footer {
   position: absolute;
   text-align: center;
   bottom: 0;
-  width: 100%;
+  width: 95%;
   height: 2.5rem;
 }
 
@@ -191,11 +191,6 @@ form.create-note button:hover {
   outline: none;
 }
 
-/* Textarea specific styling for consistent appearance */
-.create-area-textarea {
-  resize: none;
-  height: 100px;
-}
 
 /* Button styling with a minimal and flat design */
 .create-area-button {
@@ -218,3 +213,27 @@ form.create-note button:hover {
 .create-area-button:active {
   background-color: #e2990d;
 }
+
+.create-area-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: height 0.3s ease-in-out, border-color 0.2s ease-in-out;
+  overflow: hidden; /* Ensures content does not overflow during transition */
+}
+
+/* Initial collapsed state */
+.create-area-textarea.collapsed {
+  height: 40px; /* Adjust based on initial height */
+}
+
+/* Expanded state */
+.create-area-textarea.expanded {
+  height: 80px; /* Adjust based on expanded height */
+}
+
+
